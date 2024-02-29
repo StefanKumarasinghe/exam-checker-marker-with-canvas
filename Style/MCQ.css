@@ -1,0 +1,412 @@
+/*This is the links*/
+@font-face {
+	font-family:robotothin;
+	src:url(../../Style/Fontdesign/Basic/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+	font-family:raleway;
+	src:url(../../Style/Fontdesign/Basic/raleway/Raleway-Thin.ttf);
+}
+@font-face {
+	font-family:Os;
+	src:url(../../Style/Fontdesign/Basic/Os/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family:ralewayregular;
+	src:url(../../Style/Fontdesign/Basic/raleway/Raleway-Regular.ttf);
+}
+
+
+
+
+}
+html {
+  scroll-behavior:smooth;
+}
+body {
+  scroll-behavior:smooth;
+}
+.MainBody {
+  scroll-behavior:smooth;
+}
+
+/*Selection*/
+::-moz-selection { /* Code for Firefox */
+  color: #efefef;
+  background: black;
+}
+
+::selection {
+   color: #efefef;
+  background: black;
+}
+body{
+	margin:0px;	
+	text-align:center;
+	background-color:white;
+	box-shadow:1px 0 1px white;
+	
+}
+
+iframe {
+	Width:70%;
+	height:95%;
+    border:none;
+	outline:none;
+	overflow:auto;
+	border-radius:1px;
+	background-color:black ;
+	position:fixed;
+	left:30%;
+	
+	
+}
+
+.MainBody {
+	height:100%;
+	position:fixed;
+	width:30%;
+	top:0;
+	overflow-y:auto;
+	left:0;
+}
+.button {
+	padding:10%;
+	font:bold 25px ralewayregular;
+	text-align:center;
+	line-height:20px;
+	margin:0;
+	border-radius:6px;
+	cursor:pointer;
+	
+}
+.button:hover {
+	color:white !important;
+	background-color:black;
+	transition:background 0.2s, color 0.2s;
+	
+}
+
+
+
+
+
+
+
+.QuestionBlock {
+	padding:2%;
+	margin:3%;
+	border:1px solid #343434;
+	
+	background-color:white;
+	border-radius:20px 0px 20px 0px;
+	
+}
+
+
+.MainBody h1 {
+	font:60px ralewayregular;
+	color:black;
+	margin-top:30%;
+	
+	text-align:center;
+}
+.firstblock {
+	margin:0%;
+	
+	background-color:white;
+	padding:5%;
+	
+}
+.firstblock p {
+	font:20px ralewayregular;
+	color:black;
+	text-align:center;
+}
+.Secondblock {
+	background-color:black;
+	padding:2%;
+}
+.Secondblock h2 {
+	font:30px Os;
+	color:white;
+	background-color:black;
+	border:3px solid white;
+	
+	width:50px;height:50px;
+	border-radius:0px 20px 0px 20px;
+	margin:5% auto 5%;
+	padding:2%;
+	text-align:center;
+	
+}
+a {
+	text-decoration:none;
+}
+
+.resultsheet h3 {
+	font:60px ralewayregular;
+	color:black ;
+	margin:2%;
+}
+.resultsheet h4 {
+	font:40px ralewayregular;
+	color:black ;
+	margin:2%;
+}
+.resultsheet p {
+	font:15px ralewayregular;
+	color:black ;
+	margin:2%;
+	line-height:30px;
+
+	padding:1%;
+	text-align:center;
+}
+.resultsheet {
+	margin:2%;
+	display:none;
+	background-color:white;
+	padding:2%;
+	border-radius:30px;
+}
+
+	
+#buttoncheck {
+	background-color:black;
+	padding:4%;
+	margin:1%;
+	width:5%;
+	font:18px ralewayregular;
+	color:white;
+	display:inline;
+	border:1px solid white;
+	text-decoration:none;
+	text-align:center;
+
+}
+#buttonsubmit {
+	background-color:black;
+	padding:4%;
+	margin:1%;
+	width:5%;
+	font:18px ralewayregular;
+	color:white;
+	border:1px solid white;
+		text-decoration:none; 
+		text-align:center;
+		
+}
+.sendblock {
+	padding:10%;
+	text-align:center;
+	margin:auto;
+	
+}
+#Score .Explanation {
+	font:10px ralewayregular;
+	color:black ;
+	margin:2%;
+	display:none;
+}
+
+#home-more-button {
+	position:fixed;
+	top:1%;
+	left:1%;
+	
+	cursor:pointer;
+}
+[type="submit"]{
+	padding:3%;
+	outline:none;
+	
+	border:none;
+	background-color:black ;
+	font:25px ralewayregular;
+	
+	color:white;
+}
+#Canvas {
+	position:fixed;
+	bottom:0px;
+	left:30%;
+	width:70%;
+	height:5%;
+	background-color:white;
+	resize:verticle;
+}
+.work {
+
+position:fixed;
+bottom:0;
+left:30%;
+width: 70%;
+height:7%;
+background-color:black;
+
+}	
+.work:hover {
+
+height:12%;
+transition:height 0.3s;
+
+
+}	
+.featureicon {
+
+	cursor:pointer;
+	margin:0%;
+	font:35px ralewayregular;
+	display:block;
+	color:white;
+
+
+}
+
+#displaytime {
+	padding:5%;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:black;
+	color:white;
+	font:20px ralewayregular;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+button:active{
+	border:none;
+	outline:none;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+	 font-family:ralewayregular;
+  background-color: #1adb4e;
+  color: white;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+	 font-family:ralewayregular;
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  font-family:ralewayregular;	
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+.nav a{
+	 font: 22px ralewayregular;
+	 color:white;
+	 
+	 display:inline-block;
+	 width:10%;
+	 margin:0;
+	 text-decoration:none;
+	 float:left;
+	 padding:4%;
+}
+
+.nav {
+	margin:0%;
+	background-color:black;
+	position:absolute;
+	
+   border-bottom:1px solid white;
+	z-index:0;
+	top:0;
+	width:100%;
+	left:0;
+	
+}
+#update {
+color:black;
+	
+}
+#update:hover {
+opacity:0.7;
+	
+}
+
+ 
+	

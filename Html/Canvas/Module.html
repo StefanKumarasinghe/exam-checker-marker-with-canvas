@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Revise Zone | Canvas</title>
+<meta name="ROBOT" content="NO-INDEX">
+
+<style>
+
+body{
+margin:0%;
+
+box-sizing:border-box;
+}
+.brushlogo{
+width:20px;
+height:20px;
+border-radius:100px;
+border:2px solid white;
+}
+#canvas{
+z-index:3;
+overflow:none;
+box-sizing:border-box;
+
+margin:0%;
+width:100%;
+height:100%;
+cursor:crosshair;
+}
+.colorblock {
+border:2px solid white;
+width:20px;
+float:left;
+display:inline-block;
+border-radius:1000px;
+height:20px;
+margin:1%;
+cursor:pointer;
+}
+
+.flex {
+background-color:black;
+padding:1%;
+display:flex; align-items:center; width:100%;
+position:fixed;
+top:0%;
+box-shadow:0px 1px 1px white;
+
+}
+#size {
+margin:2%;
+width:250px;
+}
+
+.brush {
+font:20px arial;
+margin:2%;
+display:inline-block;
+float:left;
+color:white;
+font-family:arial;
+cursor:pointer;
+
+
+}
+.footer {
+position:fixed;
+bottom:0px;
+width:100%;
+
+
+}
+.footer p{
+text-align:center;
+font:10px arial;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="flex">
+<div style="width:300px;">
+<div class="colorblock" style="background-color:red" Onclick="Color('red')" title="Red Color"> </div>
+<div class="colorblock"style="background-color:black" Onclick="Color('black')" title="Black Color"> </div>
+<div class="colorblock"style="background-color:white" Onclick="Color('white')" title="White Color"> </div>
+<div class="colorblock"style="background-color:gray" Onclick="Color('gray')" title="Gray Color"> </div>
+<div class="colorblock"style="background-color:blue" Onclick="Color('blue')" title="Blue Color"> </div>
+<div class="colorblock"style="background-color:green" Onclick="Color('green')" title="Green Color"> </div>
+<div class="colorblock"style="background-color:pink" Onclick="Color('pink')" title="Pink Color"> </div>
+<div class="colorblock"style="background-color:purple" Onclick="Color('purple')" title="Purple Color"> </div>
+<div class="colorblock"style="background-color:orange" Onclick="Color('orange')" title="Orange Color"> </div>
+
+</div>
+<div style="width:45%;">
+<input  min=1 max=200 class="Size" type="range" id="size" step=1 value=1 onclick="sizeChanger()">
+
+<span id="sizevalue" style="color:white; font:15px Arial; ">1px</span>
+</div>
+
+<div style="width:10%; margin:auto;">
+<div style="margin:auto;">
+<div class="brush" onclick="Brush('round')" title="Paint Brush">&#10061;</div>
+<div class="brush" onclick="Brush('square')" title="Square Brush">&#10002;</div>
+<div class="brush" onclick="Brush('butt')" title="Spiral Brush">&#10001;</div>
+
+</div>
+
+
+
+</div>
+
+<div style="width:10%; margin:auto;">
+<div style="margin:auto;">
+<div class="brush" onclick="Eraser()" title="Eraser">&#9750;</div>
+
+
+<div class="brush" onclick="Color('rgba(255,255,0,0.2)')" title="Highlight Mode">&#10042;</div>
+<div class="brush" style="float:right; margin-right:10%;" onclick="Fill();" title="Clear Screen">&#9746;</div>
+</div>
+
+
+
+</div>
+<div class="footer"> <p>Coded & Designed By Revise Zone</p></div>
+
+</div>
+
+<canvas id="canvas"></canvas>
+
+
+<script src="canvas.js"></script>
+</body>
+</html<
